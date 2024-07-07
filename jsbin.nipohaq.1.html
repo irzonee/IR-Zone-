@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2024 by irzonee (http://jsbin.com/nipohaq/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IR Zone - অনলাইন স্টোর</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS for styling -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>IR Zone</h1>
+            <nav>
+                <ul>
+                    <li><a href="#products">পণ্যসমূহ</a></li>
+                    <li><a href="#cart">কার্ট</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="products">
+        <div class="container">
+            <h2>আমাদের পণ্যসমূহ</h2>
+            <div class="product">
+                <img src="product1.jpg" alt="পণ্য ১">
+                <div class="product-details">
+                    <h3>পণ্য ১</h3>
+                    <p>বিবরণ: লোরেম ইপসুম ডলর সিট অ্যামেট, কনসেক্টেটুর এলিট.</p>
+                    <p>মূল্য: ৳৫০০</p>
+                    <button onclick="addToCart('পণ্য ১', 500)">কার্টে যোগ করুন</button>
+                </div>
+            </div>
+
+            <!-- Add more products as needed -->
+
+        </div>
+    </section>
+
+    <section id="cart">
+        <div class="container">
+            <h2>আপনার কার্ট</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <p>মোট: <span id="cart-total">৳০.০০</span></p>
+            <button onclick="checkout()">Bkash দিয়ে চেকআউট</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 IR Zone. সমস্ত অধিকার সংরক্ষিত।</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript for dynamic functionality -->
+</body>
+</html>
